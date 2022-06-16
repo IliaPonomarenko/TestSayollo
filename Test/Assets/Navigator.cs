@@ -10,6 +10,7 @@ internal sealed class Navigator : MonoBehaviour
     [SerializeField] private GameObject adScreen;
     [SerializeField] private GameObject storeScreen;
     [SerializeField] private GameObject purchaseScreen;
+    [SerializeField] private GameObject entranceScreen;
     
     private enum Screen
     {
@@ -30,5 +31,6 @@ internal sealed class Navigator : MonoBehaviour
         adScreen.SetActive(screen == Screen.AD);
         purchaseScreen.SetActive(screen == Screen.Purchase);
         storeScreen.SetActive(screen == Screen.Store);
+        entranceScreen.SetActive(false);
     }
 }
